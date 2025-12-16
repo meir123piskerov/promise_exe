@@ -115,37 +115,37 @@
 // squarePositive(4).then((res) => console.log(res));
 // squarePositive(-1).catch((rej) => console.log(rej));
 
-// 3.9;
+3.9;
 
-// function waitTwoSeconds() {
-//   return new Promise((res) => {
-//     setTimeout(() => {
-//       res("Done waiting");
-//     }, 2000);
-//   });
-// }
+function waitTwoSeconds() {
+  return new Promise((res) => {
+    setTimeout(() => {
+      res("Done waiting");
+    }, 2000);
+  });
+}
 
-// waitTwoSeconds().then((res) => {
-//   console.log(res);
-// });
+waitTwoSeconds().then((res) => {
+  console.log(res);
+});
 
-// 3.1;
+3.1;
 
-// function downloadFile(url) {
-//   return new Promise((res, rej) => {
-//     setTimeout(() => {
-//       if (url.startsWith("http")) {
-//         res("Downloaded from URL");
-//       } else {
-//         rej("Invalid URL");
-//       }
-//     }, 1500);
-//   });
-// }
-// downloadFile("http")
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((rej) => {
-//     console.log(rej);
-//   });
+function downloadFile(url) {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      if (url.startsW("http")) {
+        res("Downloaded from URL");
+      } else {
+        rej("Invalid URL");
+      }
+    }, 1500);
+  });
+}
+downloadFile("http")
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((rej) => {
+    console.log(rej);
+  });
